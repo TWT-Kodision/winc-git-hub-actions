@@ -1,0 +1,15 @@
+name: Setup Python
+
+on: workflow_dispatch
+jobs:
+    Setup-python:
+        # Specify on which operating system we want this workflow to run
+        runs-on: ubuntu-20.04
+        # The steps that will be excuted
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+              with:
+                python-version: '3.10' 
+            - run: pip install -r requirements.txt
+            
