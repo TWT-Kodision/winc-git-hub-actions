@@ -13,7 +13,5 @@ jobs:
           python-version: '3.11.0'
       - name: Install Dependencies
         run: pip install -r requirements.txt
-      - name: Install pytest new
-        run: pip install -U pytest
       - name: Run tests
         run: pytest
