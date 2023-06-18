@@ -38,4 +38,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
-        script: cd /home/farm/winc-git-hub-actions/
+        script: cd /home/farm/winc-git-hub-actions/ls -l
