@@ -38,5 +38,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
-        script: pwd
+        script: cd /home/farm/winc-git-hub-actions 
+        git pull
     
